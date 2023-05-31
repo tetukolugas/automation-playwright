@@ -1,0 +1,20 @@
+image: mcr.microsoft.com/playwright:v1.34.3-jammy
+
+cache:
+  paths:
+    - node_modules/
+
+.setup:
+  before_script:
+    - cp sample.env .env
+    - npm ci
+
+test-api:
+  extends: .setup
+  script:
+    - npx playwright test tests/api/example
+
+test-web:
+  extends: .setup
+  script:
+    - npx playwright test tests/web/example
