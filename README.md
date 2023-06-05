@@ -48,12 +48,18 @@ To use this framework, follow these steps:
    npx playwright test api
    ```
 
+5. Debug the tests:
+
+   ```bash
+   # Run UI Web Automation
+   npx playwright test web --ui
+
+   # API
+   npx playwright test api --ui
+   ```
+
 ## Contributing
 
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, please open an issue or submit a pull request.
 
 Please ensure that your code follows the existing coding style and includes appropriate tests. Also, update the documentation and README.md file as necessary.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code according to your needs.

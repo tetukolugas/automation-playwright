@@ -4,18 +4,18 @@ export default class CheckoutPage {
   }
 
   selectors = {
-    firstName: 'id=first-name',
-    lastName: 'id=last-name',
-    postalCode: 'id=postal-code',
-    continueButton: 'css=.submit-button',
-    overviewTitle: 'css=.title:has-text("Checkout: Overview")',
+    firstNameInput: '#first-name',
+    lastNameInput: '#last-name',
+    postalCodeInput: '#postal-code',
+    continueButton: '.submit-button',
+    overviewTitle: '.title:has-text("Checkout: Overview")',
   };
 
   async fillCheckoutForm(firstName, lastName, postalCode) {
-    await this.page.waitForSelector(this.selectors.firstName);
-    await this.page.fill(this.selectors.firstName, firstName);
-    await this.page.fill(this.selectors.lastName, lastName);
-    await this.page.fill(this.selectors.postalCode, postalCode);
+    await this.page.waitForSelector(this.selectors.firstNameInput);
+    await this.page.fill(this.selectors.firstNameInput, firstName);
+    await this.page.fill(this.selectors.lastNameInput, lastName);
+    await this.page.fill(this.selectors.postalCodeInput, postalCode);
     await this.page.click(this.selectors.continueButton);
   }
 

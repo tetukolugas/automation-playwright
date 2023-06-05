@@ -4,10 +4,10 @@ export default class CartPage {
   }
 
   selectors = {
-    cartItems: 'css=.cart_item',
-    productNames: 'css=.inventory_item_name',
-    productPrices: 'css=.inventory_item_price',
-    checkoutButton: 'css=.checkout_button',
+    cartItems: '.cart_item',
+    productNames: '.inventory_item_name',
+    productPrices: '.inventory_item_price',
+    checkoutButton: '.checkout_button',
   };
 
   async getProductNames() {
