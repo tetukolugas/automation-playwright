@@ -1,15 +1,12 @@
-const { expect } = require('@playwright/test');
-import { devices, ElementHandle, Locator, Page } from '@playwright'
-
-exports.LoginPage = class LoginPage {
+export default class LoginPage {
   constructor(page) {
-    this.page = new Page;
+    this.page = page;
   }
 
   selectors = {
-    usernameInput: 'id=user-name',
-    passwordInput: 'id=password',
-    loginButton: 'css=.btn_action',
+    usernameInput: '#user-name',
+    passwordInput: '#password',
+    loginButton: '.btn_action',
   };
 
   async login(username, password) {

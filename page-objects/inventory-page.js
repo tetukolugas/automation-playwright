@@ -4,12 +4,12 @@ export default class InventoryPage {
   }
 
   selectors = {
-    productsContainer: 'css=.inventory_container',
-    productNames: 'css=.inventory_item_name',
-    productPrices: 'css=.inventory_item_price',
-    sortContainer: 'css=.product_sort_container',
-    addToCart: 'css=.btn_primary',
-    cartLink: 'css=.shopping_cart_link',
+    productsContainer: '.inventory_container',
+    productNames: '.inventory_item_name',
+    productPrices: '.inventory_item_price',
+    sortContainer: '.product_sort_container',
+    addToCart: '.btn_primary',
+    cartLink: '.shopping_cart_link',
   };
 
   async sortProductsByLowestPrice() {

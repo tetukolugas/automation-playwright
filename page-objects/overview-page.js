@@ -4,10 +4,10 @@ export default class OverviewPage {
   }
 
   selectors = {
-    productNames: 'css=.inventory_item_name',
-    productPrices: 'css=.inventory_item_price',
-    finishButton: 'id=finish',
-    completeTitle: 'css=.title:has-text("Checkout: Complete!")',
+    productNames: '.inventory_item_name',
+    productPrices: '.inventory_item_price',
+    finishButton: '#finish',
+    completeTitle: '.title:has-text("Checkout: Complete!")',
   };
 
   async getProductNames() {
