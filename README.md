@@ -19,7 +19,7 @@ To use this framework, follow these steps:
 
    ```bash
    git clone git@github.com:tetukolugas/automation-playwright.git
-   cd playwright-automation
+   cd automation-playwright
    ```
 
 2. Copy environment variables:
